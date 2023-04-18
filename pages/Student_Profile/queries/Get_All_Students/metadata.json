@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/students/"
+        "url": "web:4000/students"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Log_In_Page",
+    "pageId": "Student_Profile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Log_In_Page_Get_All_Students",
+  "id": "Student_Profile_Get_All_Students",
   "deleted": false,
-  "gitSyncId": "643d845c59219224f1620347_643e9de06f8a3423bc4b03f9"
+  "gitSyncId": "643d84b5481e6f6fb60038bf_643f07ebe99055334258ac27"
 }
