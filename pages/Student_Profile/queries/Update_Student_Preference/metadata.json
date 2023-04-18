@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/students/4/collegePreferences"
+        "url": "web:4000/students/6/collegePreferences"
       },
       "invalids": [],
       "messages": [],
