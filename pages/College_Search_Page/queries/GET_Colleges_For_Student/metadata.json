@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Current_Student",
+    "name": "GET_Colleges_For_Student",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/students/4"
+        "url": "web:4000/colleges"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Student_Profile",
+    "pageId": "College_Search_Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Student_Profile_Current_Student",
+  "id": "College_Search_Page_GET_Colleges_For_Student",
   "deleted": false,
-  "gitSyncId": "643d845c59219224f1620347_643eabd36f8a3423bc4b0411"
+  "gitSyncId": "643d84b5481e6f6fb60038bf_643f0e9fe99055334258ac30"
 }
