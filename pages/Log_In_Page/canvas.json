@@ -167,10 +167,10 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.FirstName.computedValue"
+                  "key": "primaryColumns.label.computedValue"
                 },
                 {
-                  "key": "primaryColumns.LastName.computedValue"
+                  "key": "primaryColumns.value.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -208,7 +208,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681826604116,
+              "columnUpdatedAt": 1681850935064,
               "originalBottomRow": 41,
               "defaultSelectedRowIndices": [
                 0
@@ -216,8 +216,8 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "FirstName",
-                "LastName"
+                "label",
+                "value"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -233,16 +233,16 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "FirstName": {
+                "label": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "FirstName",
-                  "id": "FirstName",
-                  "alias": "FirstName",
+                  "originalId": "label",
+                  "id": "label",
+                  "alias": "label",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -254,24 +254,24 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "FirstName",
+                  "label": "label",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FirstName\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"label\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "LastName": {
+                "value": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "LastName",
-                  "id": "LastName",
-                  "alias": "LastName",
+                  "originalId": "value",
+                  "id": "value",
+                  "alias": "value",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -283,10 +283,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "LastName",
+                  "label": "value",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"LastName\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"value\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
