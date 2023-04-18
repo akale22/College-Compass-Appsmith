@@ -2155,7 +2155,9 @@
               "name": "Students_CollegePreferences",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "ID"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
