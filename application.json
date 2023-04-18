@@ -3,6 +3,18 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Log_In_Page",
+      "isDefault": false
+    },
+    {
+      "id": "Student_Profile",
+      "isDefault": false
+    },
+    {
+      "id": "College_Search_Page",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -10,6 +22,9 @@
   "unreadCommentThreads": 0,
   "color": "#F5D1D1",
   "icon": "couples",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
