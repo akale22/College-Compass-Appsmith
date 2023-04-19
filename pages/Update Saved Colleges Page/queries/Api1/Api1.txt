@@ -1,0 +1,1 @@
+{{Favorited_Colleges_Table.selectedRow}}
