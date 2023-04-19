@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 610,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -45,7 +45,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.71875,
               "dynamicTriggerPathList": [],
-              "leftColumn": 1,
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -62,7 +62,8 @@
               "text": "Current College Preferences:",
               "key": "90tm2jptbz",
               "isDeprecated": false,
-              "rightColumn": 21,
+              "rightColumn": 22,
+              "backgroundColor": "#fafafa",
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "6b0r98v7d3",
@@ -94,15 +95,15 @@
                 "parent",
                 "group"
               ],
-              "topRow": 31,
-              "bottomRow": 48,
+              "topRow": 32,
+              "bottomRow": 49,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
-              "leftColumn": 1,
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -324,7 +325,7 @@
               "key": "ro1apk7uxe",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 27,
+              "rightColumn": 28,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "3cos7yu1wd",
               "containerStyle": "card",
@@ -335,10 +336,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 31,
+              "originalTopRow": 32,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 48,
+              "originalBottomRow": 49,
               "minDynamicHeight": 10
             },
             {
@@ -464,7 +465,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 47,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [],
                       "text": "Update",
                       "isDisabled": false,
@@ -843,6 +844,54 @@
               "originalBottomRow": 9,
               "fontSize": "3.75rem",
               "minDynamicHeight": 4
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Return_To_Profile_Button",
+              "onClick": "{{navigateTo('Student Profile Page', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#18181b",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 65,
+              "bottomRow": 76,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.1875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [],
+              "text": "Return to Profile Page",
+              "isDisabled": false,
+              "key": "vbnkqrfnyy",
+              "isDeprecated": false,
+              "rightColumn": 58,
+              "isDefaultClickDisabled": true,
+              "widgetId": "4ti60w3adq",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "hug",
+              "originalTopRow": 65,
+              "disabledWhenInvalid": false,
+              "borderRadius": "1.5rem",
+              "originalBottomRow": 76,
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
             }
           ]
         },

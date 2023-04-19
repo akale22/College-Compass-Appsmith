@@ -847,7 +847,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button1",
+              "widgetName": "Return_To_Profile_Button",
               "onClick": "{{navigateTo('Student Profile Page', {}, 'SAME_WINDOW')}}",
               "buttonColor": "#18181b",
               "displayName": "Button",
