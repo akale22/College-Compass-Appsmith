@@ -429,9 +429,7 @@
               "name": "GET_College_ID",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [
-                "College_ID.selectedOptionValue"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
