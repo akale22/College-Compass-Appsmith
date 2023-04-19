@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1350,
+          "bottomRow": 1450,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -123,9 +123,6 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "onOptionChange"
-                },
-                {
-                  "key": "onDropdownClose"
                 }
               ],
               "displayName": "Select",
@@ -145,7 +142,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "{{Get_Student_College_Preference.run(); Get_Student_Favorited_Colleges.run(); Get_Student_High_School_Info.run()\nGet_Student_Info.run()}}",
+              "onDropdownClose": "",
               "key": "7t0xr5swzt",
               "labelTextSize": "1rem",
               "isDeprecated": false,
@@ -158,7 +155,7 @@
               "responsiveBehavior": "fill",
               "originalTopRow": 10,
               "maxDynamicHeight": 9000,
-              "onOptionChange": "{{Get_Student_College_Preference.run(); Get_Student_Favorited_Colleges.run(); Get_Student_High_School_Info.run()\nGet_Student_Info.run()}}",
+              "onOptionChange": "{{Get_Student_College_Preference.run(); Get_Student_Favorited_Colleges.run(); \nGet_Student_High_School_Info.run()\nGet_Student_Info.run()}}",
               "minDynamicHeight": 4
             },
             {
@@ -292,7 +289,7 @@
                       "text": "{{Get_Student_High_School_Info.data.map((element) => element.HighSchoolName).join()}}",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
-                      "rightColumn": 25,
+                      "rightColumn": 27,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "ha4fjpu9fy",
@@ -450,7 +447,7 @@
               "key": "xni4vs4pw0",
               "backgroundColor": "white",
               "isDeprecated": false,
-              "rightColumn": 59,
+              "rightColumn": 62,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "ycwn38bh97",
               "isVisible": true,
@@ -1541,15 +1538,15 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 98,
-              "bottomRow": 135,
+              "topRow": 108,
+              "bottomRow": 145,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.71875,
-              "leftColumn": 34,
+              "leftColumn": 14,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -1885,7 +1882,7 @@
               "key": "pdr86hngfz",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 42,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "7bvfgsts3s",
               "minWidth": 450,
@@ -1894,10 +1891,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 98,
+              "originalTopRow": 108,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 135,
+              "originalBottomRow": 145,
               "minDynamicHeight": 10
             },
             {

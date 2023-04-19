@@ -267,7 +267,7 @@
               "boxShadow": "none",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
               "labelText": "Select StudentID to Login:",
-              "topRow": 9,
+              "topRow": 11,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
@@ -313,7 +313,7 @@
               "searchTags": [
                 "dropdown"
               ],
-              "bottomRow": 16,
+              "bottomRow": 18,
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 12.5625,
@@ -792,7 +792,7 @@
               "originalTopRow": 73,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
-              "originalBottomRow": 77,
+              "originalBottomRow": 80,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -840,7 +840,7 @@
               "originalTopRow": 73,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
-              "originalBottomRow": 77,
+              "originalBottomRow": 80,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -885,8 +885,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
+              "originalTopRow": 84,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
+              "originalBottomRow": 95,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }
