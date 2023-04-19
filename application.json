@@ -13,11 +13,15 @@
       "isDefault": false
     },
     {
-      "id": "Update College Preferences",
+      "id": "Update Preferences Page",
       "isDefault": false
     },
     {
       "id": "College Profile Page",
+      "isDefault": false
+    },
+    {
+      "id": "Update College Info Page",
       "isDefault": false
     }
   ],

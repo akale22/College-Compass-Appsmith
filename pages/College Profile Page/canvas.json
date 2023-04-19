@@ -347,8 +347,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 21,
-              "bottomRow": 26,
+              "topRow": 20,
+              "bottomRow": 25,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -357,7 +357,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 13,
+              "leftColumn": 9,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -378,7 +378,7 @@
               "key": "90tm2jptbz",
               "isDeprecated": false,
               "rightColumn": 57,
-              "textAlign": "LEFT",
+              "textAlign": "CENTER",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "3k7cirwl5y",
               "minWidth": 450,
@@ -390,10 +390,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 21,
+              "originalTopRow": 20,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 26,
+              "originalBottomRow": 25,
               "fontSize": "1.875rem",
               "minDynamicHeight": 4
             },
@@ -423,7 +423,7 @@
                 }
               ],
               "options": "{{Get_All_Colleges.data}}",
-              "placeholderText": "Select option",
+              "placeholderText": "",
               "isDisabled": false,
               "isRequired": false,
               "dynamicHeight": "FIXED",
@@ -1457,7 +1457,8 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button1",
+              "widgetName": "Update_Metrics_Button",
+              "onClick": "{{navigateTo('Update Admissions Metrics', {}, 'SAME_WINDOW')}}",
               "buttonColor": "#18181b",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1472,7 +1473,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 18.1875,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 2,
               "dynamicBindingPathList": [],
               "text": "Update",

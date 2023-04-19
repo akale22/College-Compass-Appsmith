@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Get_Student_College_Preference",
+    "name": "Get_College_Info",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/students/{{Student_ID_Login_Bar.selectedOptionValue}}/collegePreferences"
+        "url": "web:4000/colleges/{{College_ID_Login_Bar.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -17,14 +16,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Update College Preferences",
+    "pageId": "Update College Info Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -47,14 +45,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Student_ID_Login_Bar.selectedOptionValue"
+      "College_ID_Login_Bar.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Update College Preferences_Get_Student_College_Preference",
+  "id": "Update College Info Page_Get_College_Info",
   "deleted": false,
-  "gitSyncId": "643f69bd8437f45ffe2d4cd4_643f73d30cb0b25102467474"
+  "gitSyncId": "643f69bd8437f45ffe2d4cd4_643fe2c6dde65e3234d07f96"
 }
