@@ -271,7 +271,7 @@
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
-              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `{\"label\": \"label\", \"value\": 1}`))(Student_ID_Login_Bar.options, Student_ID_Login_Bar.serverSideFiltering) }}",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "leftColumn": 1,
               "dynamicBindingPathList": [
@@ -280,9 +280,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "defaultOptionValue"
                 },
                 {
                   "key": "options"
@@ -304,6 +301,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "onDropdownClose"
+                },
+                {
+                  "key": "onOptionChange"
                 }
               ],
               "displayName": "Select",
@@ -323,7 +323,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "{{Get_Student_Favorited_Colleges.run()}}",
+              "onDropdownClose": "",
               "key": "7t0xr5swzt",
               "labelTextSize": "1rem",
               "isDeprecated": false,
@@ -797,8 +797,13 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Add_College_Button",
-              "onClick": "{{Add_Favorited_College.run(() => Get_Student_Favorited_Colleges.run(), () => {})}}",
+              "onClick": "{{Add_Favorited_College.run(); Get_Student_Favorited_Colleges.run(); Get_Student_Favorited_Colleges.run()}}",
               "buttonColor": "#18181b",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [

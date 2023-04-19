@@ -161,7 +161,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Enrollment: {{Get_College_Info.data[0].EnrollmentSize}}",
+                      "text": "Enrollment: {{Get_College_Info.data.length > 1 ? \"\" : Get_College_Info.data[0].EnrollmentSize}}",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
                       "rightColumn": 56,
@@ -220,7 +220,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "College Name: {{Get_College_Info.data[0].CollegeName}}",
+                      "text": "College Name: {{Get_College_Info.data.length > 1 ? \"\" : Get_College_Info.data[0].CollegeName}}",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
                       "rightColumn": 56,
@@ -279,7 +279,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Acceptance Rate: {{Get_College_Info.data[0].AcceptanceRate}}",
+                      "text": "Acceptance Rate: {{Get_College_Info.data.length > 1 ? \"\" : Get_College_Info.data[0].AcceptanceRate}}",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
                       "rightColumn": 55,
@@ -405,7 +405,7 @@
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
-              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `{\"label\": \"label\", \"value\": 1}`))(College_ID_Login_Bar.options, College_ID_Login_Bar.serverSideFiltering) }}",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "leftColumn": 2,
               "dynamicBindingPathList": [
@@ -414,9 +414,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "defaultOptionValue"
                 },
                 {
                   "key": "options"
@@ -460,7 +457,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "{{Get_College_Info.run()}}",
+              "onDropdownClose": "",
               "key": "7t0xr5swzt",
               "labelTextSize": "1rem",
               "isDeprecated": false,

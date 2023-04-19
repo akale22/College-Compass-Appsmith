@@ -161,7 +161,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Enrollment: {{Get_College_Info.data[0].EnrollmentSize}}",
+                      "text": "Enrollment: {{Get_College_Info.data === undefined ? \"\" : Get_College_Info.data[0].EnrollmentSize}}",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
                       "rightColumn": 32,
@@ -220,7 +220,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Acceptance Rate: {{Get_College_Info.data[0].AcceptanceRate}}",
+                      "text": "Acceptance Rate: {{Get_College_Info.data === undefined ? \"\" : Get_College_Info.data[0].AcceptanceRate}}",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
                       "rightColumn": 41,
@@ -374,7 +374,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Welcome Back to {{Get_College_Info.data[0].CollegeName}}!",
+              "text": "{{Get_College_Info.data === undefined ? \"Please Login Using the Bar Above!\" : \"Welcome Back to \" + Get_College_Info.data[0].CollegeName + \"!\"}}",
               "key": "90tm2jptbz",
               "isDeprecated": false,
               "rightColumn": 57,
@@ -405,7 +405,7 @@
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
-              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `{\"label\": \"label\", \"value\": 1}`))(College_ID_Login_Bar.options, College_ID_Login_Bar.serverSideFiltering) }}",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "leftColumn": 2,
               "dynamicBindingPathList": [
@@ -417,9 +417,6 @@
                 },
                 {
                   "key": "options"
-                },
-                {
-                  "key": "defaultOptionValue"
                 }
               ],
               "options": "{{Get_All_Colleges.data}}",
@@ -460,7 +457,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "{{Get_College_Info.run(); Get_Interested_Students.run(); \nGet_Departments.run(); Get_Courses.run()}}/",
+              "onDropdownClose": "",
               "key": "xaxevld8wu",
               "labelTextSize": "0.875rem",
               "isDeprecated": false,
@@ -473,7 +470,7 @@
               "responsiveBehavior": "fill",
               "originalTopRow": 10,
               "maxDynamicHeight": 9000,
-              "onOptionChange": "{{Get_College_Info.run(); Get_Interested_Students.run(); \nGet_Departments.run(); Get_Courses.run()}}/",
+              "onOptionChange": "{{Get_College_Info.run(); Get_Interested_Students.run();\nGet_Total_Students_Interested.run();\nGet_Departments.run(); Get_Courses.run()}}/",
               "minDynamicHeight": 4
             },
             {
@@ -488,8 +485,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 55,
-              "bottomRow": 88,
+              "topRow": 65,
+              "bottomRow": 98,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -556,7 +553,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "There are currently {{Get_Total_Students_Interested.data[0].Total}} students interested:",
+                      "text": "There are currently {{Get_Total_Students_Interested.data === undefined ? \"0\" : Get_Total_Students_Interested.data[0].Total}} students interested:",
                       "key": "90tm2jptbz",
                       "isDeprecated": false,
                       "rightColumn": 62,
@@ -575,7 +572,7 @@
                       "originalTopRow": 0,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 4,
+                      "originalBottomRow": 6,
                       "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
@@ -642,7 +639,7 @@
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "columnUpdatedAt": 1681905884241,
-                      "originalBottomRow": 31,
+                      "originalBottomRow": 33,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -713,7 +710,7 @@
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 6,
+                      "originalTopRow": 8,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     }
@@ -749,10 +746,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 55,
+              "originalTopRow": 65,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 88,
+              "originalBottomRow": 98,
               "minDynamicHeight": 10
             },
             {
@@ -1512,58 +1509,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "College Profile Page_Get_Courses",
-              "name": "Get_Courses",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "College_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "College Profile Page_Get_Departments",
-              "name": "Get_Departments",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "College_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "College Profile Page_Get_Interested_Students",
-              "name": "Get_Interested_Students",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "College_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "College Profile Page_Get_College_Info",
-              "name": "Get_College_Info",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "College_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "College Profile Page_Get_Total_Students_Interested",
-              "name": "Get_Total_Students_Interested",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "College_ID_Login_Bar.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
