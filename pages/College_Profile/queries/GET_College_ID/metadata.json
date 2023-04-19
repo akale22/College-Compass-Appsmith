@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Current_Student_Favorited_Col",
+    "name": "GET_College_ID",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/students/{{Student_ID_Login_Bar.selectedOptionValue}}/favoritedColleges"
+        "url": "web:4000/colleges/{{College_ID.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -17,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Student_Profile",
+    "pageId": "College_Profile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -38,19 +37,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Student_ID_Login_Bar.selectedOptionValue"
+      "College_ID.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Student_Profile_Current_Student_Favorited_Col",
+  "id": "College_Profile_GET_College_ID",
   "deleted": false,
-  "gitSyncId": "643d845c59219224f1620347_643eaf046f8a3423bc4b041a"
+  "gitSyncId": "643d84b5481e6f6fb60038bf_643f44b9ad66be459bad8e63"
 }

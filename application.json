@@ -15,6 +15,10 @@
     {
       "id": "College_Search_Page",
       "isDefault": false
+    },
+    {
+      "id": "College_Profile",
+      "isDefault": false
     }
   ],
   "viewMode": false,
