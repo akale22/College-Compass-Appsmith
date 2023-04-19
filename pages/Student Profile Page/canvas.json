@@ -1164,6 +1164,9 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.CollegeID.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1201,7 +1204,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681874544389,
+              "columnUpdatedAt": 1681878399181,
               "originalBottomRow": 99,
               "defaultSelectedRowIndices": [
                 0
@@ -1211,7 +1214,8 @@
               "columnOrder": [
                 "CollegeName",
                 "AcceptanceRate",
-                "EnrollmentSize"
+                "EnrollmentSize",
+                "CollegeID"
               ],
               "dynamicPropertyPathList": [],
               "compactMode": "DEFAULT",
@@ -1313,6 +1317,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Favorited_Colleges_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EnrollmentSize\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "CollegeID": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "CollegeID",
+                  "id": "CollegeID",
+                  "alias": "CollegeID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "CollegeID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Favorited_Colleges_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CollegeID\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""

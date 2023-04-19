@@ -1,1 +1,1 @@
-{{College_Search_Table.selectedRow.data}}
+{{College_Search_Table.selectedRow}}

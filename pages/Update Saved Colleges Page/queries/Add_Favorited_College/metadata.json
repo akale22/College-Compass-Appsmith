@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{College_Search_Table.selectedRow.data}}",
+      "body": "{{College_Search_Table.selectedRow}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -55,7 +55,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "College_Search_Table.selectedRow.data",
+      "College_Search_Table.selectedRow",
       "Student_ID_Login_Bar.selectedOptionValue"
     ],
     "userSetOnLoad": false,
