@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 560,
           "containerStyle": "none",
           "snapRows": 80,
           "parentRowSpace": 1,
@@ -26,6 +26,63 @@
           "leftColumn": 0,
           "children": [
             {
+              "widgetName": "Title_Text",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 1,
+              "bottomRow": 9,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 18.1875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 13,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "College Profile Page",
+              "key": "ce77wop7ms",
+              "isDeprecated": false,
+              "rightColumn": 54,
+              "backgroundColor": "#18181b",
+              "textAlign": "CENTER",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "3bsgsh2cdy",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#fafafa",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 1,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 9,
+              "fontSize": "3.75rem",
+              "minDynamicHeight": 4
+            },
+            {
               "widgetName": "Text1",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -34,8 +91,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 13,
-              "bottomRow": 18,
+              "topRow": 23,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -74,10 +131,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 13,
+              "originalTopRow": 23,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 18,
+              "originalBottomRow": 28,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -93,15 +150,15 @@
                 "parent",
                 "group"
               ],
-              "topRow": 18,
-              "bottomRow": 34,
+              "topRow": 40,
+              "bottomRow": 56,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "leftColumn": 2,
+              "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -295,10 +352,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 11,
+                      "originalTopRow": 10,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 16,
+                      "originalBottomRow": 14,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
@@ -323,7 +380,7 @@
               "key": "02x3gahfxa",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 26,
+              "rightColumn": 29,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "g259fgfkg8",
               "containerStyle": "card",
@@ -334,10 +391,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 18,
+              "originalTopRow": 40,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 36,
+              "originalBottomRow": 56,
               "minDynamicHeight": 10
             },
             {
@@ -351,12 +408,12 @@
               ],
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "Select a CollegeID to login",
+              "labelText": "Select a CollegeID to login:",
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 3,
-              "bottomRow": 10,
+              "topRow": 10,
+              "bottomRow": 17,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -393,7 +450,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 22,
+              "rightColumn": 63,
               "dynamicHeight": "FIXED",
               "widgetId": "gsu6mk6t84",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -405,8 +462,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 9,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 16,
               "onOptionChange": "{{GET_College_ID.run()}}",
               "minDynamicHeight": 4
             }

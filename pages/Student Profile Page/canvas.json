@@ -123,6 +123,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "onOptionChange"
+                },
+                {
+                  "key": "onDropdownClose"
                 }
               ],
               "displayName": "Select",
@@ -142,7 +145,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "",
+              "onDropdownClose": "{{Get_Student_College_Preference.run(); Get_Student_Favorited_Colleges.run(); \nGet_Student_High_School_Info.run()\nGet_Student_Info.run()}}",
               "key": "7t0xr5swzt",
               "labelTextSize": "1rem",
               "isDeprecated": false,
@@ -454,10 +457,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 34,
+              "originalTopRow": 35,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 48,
+              "originalBottomRow": 49,
               "minDynamicHeight": 14
             },
             {

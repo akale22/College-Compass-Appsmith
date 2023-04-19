@@ -298,7 +298,7 @@
               "version": 1,
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 16,
+              "originalBottomRow": 18,
               "widgetName": "Student_ID_Login_Bar",
               "isFilterable": true,
               "dynamicPropertyPathList": [
@@ -326,7 +326,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "",
+              "onDropdownClose": "{{Get_Student_Favorited_Colleges.run()}}",
               "key": "7t0xr5swzt",
               "labelTextSize": "1rem",
               "isDeprecated": false,
@@ -337,7 +337,7 @@
               "labelAlignment": "left",
               "renderMode": "CANVAS",
               "responsiveBehavior": "fill",
-              "originalTopRow": 9,
+              "originalTopRow": 11,
               "maxDynamicHeight": 9000,
               "onOptionChange": "{{Get_Student_Favorited_Colleges.run()}}",
               "minDynamicHeight": 4
