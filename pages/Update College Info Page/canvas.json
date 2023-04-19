@@ -573,7 +573,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Update_Info_Button",
-                      "onClick": "{{Update_College_Info.run(); Get_College_Info.run(); Get_College_Info.run()}}",
+                      "onClick": "{{Update_College_Info.run(() => Get_College_Info.run(), () => {})}}",
                       "buttonColor": "#18181b",
                       "dynamicPropertyPathList": [
                         {

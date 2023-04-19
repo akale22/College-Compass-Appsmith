@@ -442,7 +442,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Update_Preferences_Button",
-                      "onClick": "{{Update_Student_Preference.run(); Get_Student_College_Preference.run(); Get_Student_College_Preference.run()}}",
+                      "onClick": "{{Update_Student_Preference.run(() => Get_Student_College_Preference.run(), () => {})}}",
                       "buttonColor": "#18181b",
                       "dynamicPropertyPathList": [
                         {
