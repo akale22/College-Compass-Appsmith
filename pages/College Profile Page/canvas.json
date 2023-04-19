@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1040,
+          "bottomRow": 980,
           "containerStyle": "none",
           "snapRows": 80,
           "parentRowSpace": 1,
@@ -496,7 +496,7 @@
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 18.1875,
-              "leftColumn": 2,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -738,7 +738,7 @@
               "key": "c8g6uv3ht2",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 26,
+              "rightColumn": 25,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "kdhxl5b3uk",
               "containerStyle": "card",
@@ -767,15 +767,15 @@
                 "parent",
                 "group"
               ],
-              "topRow": 38,
-              "bottomRow": 104,
+              "topRow": 32,
+              "bottomRow": 98,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 18.1875,
-              "leftColumn": 38,
+              "leftColumn": 32,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -818,7 +818,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 18.1875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 22,
+                      "leftColumn": 25,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -835,7 +835,7 @@
                       "text": "Departments",
                       "key": "zlu22nym4d",
                       "isDeprecated": false,
-                      "rightColumn": 45,
+                      "rightColumn": 41,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "bder1574qq",
@@ -1379,7 +1379,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 18.1875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 14,
+                      "leftColumn": 19,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -1396,7 +1396,7 @@
                       "text": "Current Offerings:",
                       "key": "zlu22nym4d",
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 48,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "cttfalzwmr",
@@ -1437,7 +1437,7 @@
               "key": "c8g6uv3ht2",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 63,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "asr0s1jwg3",
               "containerStyle": "card",
@@ -1448,44 +1448,38 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 38,
+              "originalTopRow": 32,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 104,
+              "originalBottomRow": 98,
               "minDynamicHeight": 10
             },
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "buttonColor": "#18181b",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
                 "click",
                 "submit"
               ],
-              "topRow": 48,
-              "bottomRow": 52,
+              "topRow": 47,
+              "bottomRow": 51,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 18.1875,
+              "dynamicTriggerPathList": [],
               "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Submit",
+              "dynamicBindingPathList": [],
+              "text": "Update",
               "isDisabled": false,
               "key": "gaqhmk4chl",
               "isDeprecated": false,
-              "rightColumn": 18,
+              "rightColumn": 21,
               "isDefaultClickDisabled": true,
               "widgetId": "g5knq2ijxi",
               "minWidth": 120,
@@ -1496,10 +1490,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
-              "originalTopRow": 48,
+              "originalTopRow": 47,
               "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 52,
+              "borderRadius": "1.5rem",
+              "originalBottomRow": 51,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }
