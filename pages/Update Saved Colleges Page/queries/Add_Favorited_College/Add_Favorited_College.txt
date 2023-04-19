@@ -1,1 +1,1 @@
-{{Add_New_College_Form.data}}
+{{College_Search_Table.selectedRow.data}}
