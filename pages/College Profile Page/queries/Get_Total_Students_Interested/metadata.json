@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Get_Student_Favorited_Colleges",
+    "name": "Get_Total_Students_Interested",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/students/{{Student_ID_Login_Bar.selectedOptionValue}}/favoritedColleges"
+        "url": "web:4000/colleges/{{College_ID_Login_Bar.selectedOptionValue}}/totalStudentsInterested"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Update Saved Colleges Page",
+    "pageId": "College Profile Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,19 +37,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Student_ID_Login_Bar.selectedOptionValue"
+      "College_ID_Login_Bar.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Update Saved Colleges Page_Get_Student_Favorited_Colleges",
+  "id": "College Profile Page_Get_Total_Students_Interested",
   "deleted": false,
-  "gitSyncId": "643f59639baed23f40209c29_643f66989baed23f40209c66"
+  "gitSyncId": "643f69bd8437f45ffe2d4cd4_643fd6c712db6119f484df96"
 }
