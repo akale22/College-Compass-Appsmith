@@ -751,6 +751,11 @@
               "widgetName": "Delete_College_Button",
               "onClick": "{{Delete_Favorited_College.run(() => Get_Student_Favorited_Colleges.run(), () => showAlert('No college selected','error'))}}",
               "buttonColor": "#18181b",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -797,7 +802,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Add_College_Button",
-              "onClick": "{{Add_Favorited_College.run(); Get_Student_Favorited_Colleges.run(); Get_Student_Favorited_Colleges.run()}}",
+              "onClick": "{{Add_Favorited_College.run(() => Get_Student_Favorited_Colleges.run(), () => showAlert('No college selected','error'))}}",
               "buttonColor": "#18181b",
               "dynamicPropertyPathList": [
                 {
