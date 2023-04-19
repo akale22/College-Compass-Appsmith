@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/students/6/collegePreferences"
+        "url": "web:4000/students/{{Student_ID_Login_Bar.selectedOptionValue}}/collegePreferences"
       },
       "invalids": [],
       "messages": [],
@@ -49,7 +48,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Preferences_Form.data"
+      "Preferences_Form.data",
+      "Student_ID_Login_Bar.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 990,
+          "bottomRow": 1430,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -27,22 +27,27 @@
           "children": [
             {
               "boxShadow": "none",
-              "widgetName": "Select1",
+              "widgetName": "Student_ID_Login_Bar",
               "isFilterable": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onOptionChange"
+                }
+              ],
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
               "labelText": "Select StudentID to Login",
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 87,
-              "bottomRow": 94,
+              "topRow": 131,
+              "bottomRow": 138,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "",
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `1`))(Student_ID_Login_Bar.options, Student_ID_Login_Bar.serverSideFiltering) }}",
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [
@@ -60,6 +65,9 @@
                 },
                 {
                   "key": "options"
+                },
+                {
+                  "key": "defaultOptionValue"
                 }
               ],
               "labelPosition": "Top",
@@ -86,7 +94,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "originalBottomRow": 94,
-              "onOptionChange": "{{Students_CollegePreferences.run()}}",
+              "onOptionChange": "{{Students_CollegePreferences.run(); Current_Student_Favorited_Col.run(); Sample_High_School.run()}}",
               "minDynamicHeight": 4
             },
             {
@@ -721,7 +729,7 @@
                 "group"
               ],
               "topRow": 6,
-              "bottomRow": 16,
+              "bottomRow": 62,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -742,7 +750,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 100,
+                  "bottomRow": 560,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -762,7 +770,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 4,
+                      "bottomRow": 24,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -804,10 +812,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 1,
+                      "originalTopRow": 0,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 8,
+                      "originalBottomRow": 4,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -820,8 +828,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 4,
-                      "bottomRow": 8,
+                      "topRow": 24,
+                      "bottomRow": 54,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -863,10 +871,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 7,
+                      "originalTopRow": 4,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 11,
+                      "originalBottomRow": 8,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -880,7 +888,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 4,
+                      "bottomRow": 24,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -922,10 +930,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 1,
+                      "originalTopRow": 0,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
+                      "originalBottomRow": 4,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
@@ -979,8 +987,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 28,
-              "bottomRow": 45,
+              "topRow": 72,
+              "bottomRow": 89,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1290,8 +1298,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 18,
-              "bottomRow": 22,
+              "topRow": 62,
+              "bottomRow": 66,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -1323,7 +1331,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 26,
+              "topRow": 70,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1401,7 +1409,7 @@
               "dynamicPropertyPathList": [],
               "compactMode": "DEFAULT",
               "displayName": "Table",
-              "bottomRow": 47,
+              "bottomRow": 91,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1529,8 +1537,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 66,
+              "bottomRow": 70,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1588,8 +1596,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 50,
-              "bottomRow": 54,
+              "topRow": 94,
+              "bottomRow": 98,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1640,8 +1648,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 66,
+              "bottomRow": 70,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1697,8 +1705,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 47,
-              "bottomRow": 84,
+              "topRow": 91,
+              "bottomRow": 128,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -2068,8 +2076,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 50,
-              "bottomRow": 54,
+              "topRow": 94,
+              "bottomRow": 98,
               "tooltip": "",
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
@@ -2124,8 +2132,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 95,
-              "bottomRow": 99,
+              "topRow": 139,
+              "bottomRow": 143,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -2176,7 +2184,9 @@
               "name": "Current_Student_Favorited_Col",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Student_ID_Login_Bar.selectedOptionValue"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -2194,7 +2204,9 @@
               "name": "Current_Student",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Student_ID_Login_Bar.selectedOptionValue"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -2202,7 +2214,9 @@
               "name": "Sample_High_School",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Student_ID_Login_Bar.selectedOptionValue"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -2211,7 +2225,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "ID"
+                "Student_ID_Login_Bar.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
