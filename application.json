@@ -1,23 +1,19 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Home Page",
       "isDefault": true
     },
     {
-      "id": "Log_In_Page",
+      "id": "Student Profile Page",
       "isDefault": false
     },
     {
-      "id": "Student_Profile",
+      "id": "Update Saved Colleges Page",
       "isDefault": false
     },
     {
-      "id": "College_Search_Page",
-      "isDefault": false
-    },
-    {
-      "id": "College_Profile",
+      "id": "College Profile Page",
       "isDefault": false
     }
   ],
