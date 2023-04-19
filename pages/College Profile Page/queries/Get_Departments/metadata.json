@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Get_Total_Students_Interested",
+    "name": "Get_Departments",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/colleges/{{College_ID_Login_Bar.selectedOptionValue}}/totalStudentsInterested"
+        "url": "web:4000/colleges/{{College_ID_Login_Bar.selectedOptionValue}}/departments"
       },
       "invalids": [],
       "messages": [],
@@ -53,7 +53,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "College Profile Page_Get_Total_Students_Interested",
+  "id": "College Profile Page_Get_Departments",
   "deleted": false,
-  "gitSyncId": "643f69bd8437f45ffe2d4cd4_643fd6c712db6119f484df96"
+  "gitSyncId": "643f69bd8437f45ffe2d4cd4_643fd9fe12db6119f484dfa1"
 }
