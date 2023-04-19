@@ -303,9 +303,6 @@
               "isFilterable": true,
               "dynamicPropertyPathList": [
                 {
-                  "key": "onOptionChange"
-                },
-                {
                   "key": "onDropdownClose"
                 }
               ],
@@ -339,7 +336,7 @@
               "responsiveBehavior": "fill",
               "originalTopRow": 11,
               "maxDynamicHeight": 9000,
-              "onOptionChange": "{{Get_Student_Favorited_Colleges.run()}}",
+              "onOptionChange": "{{Get_Student_Favorited_Colleges.run()}}/",
               "minDynamicHeight": 4
             },
             {
@@ -910,16 +907,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Update Saved Colleges Page_Get_Student_Favorited_Colleges",
-              "name": "Get_Student_Favorited_Colleges",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Student_ID_Login_Bar.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

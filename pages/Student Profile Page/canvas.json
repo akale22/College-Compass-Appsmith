@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1040,
+          "bottomRow": 1130,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -35,7 +35,7 @@
                 "label"
               ],
               "topRow": 1,
-              "bottomRow": 9,
+              "bottomRow": 17,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -78,7 +78,7 @@
               "originalTopRow": 1,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 9,
+              "originalBottomRow": 17,
               "fontSize": "3.75rem",
               "minDynamicHeight": 4
             },
@@ -86,7 +86,7 @@
               "boxShadow": "none",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
               "labelText": "Select StudentID to Login:",
-              "topRow": 10,
+              "topRow": 18,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
@@ -117,7 +117,7 @@
               "version": 1,
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 17,
+              "originalBottomRow": 25,
               "widgetName": "Student_ID_Login_Bar",
               "isFilterable": true,
               "dynamicPropertyPathList": [
@@ -132,7 +132,7 @@
               "searchTags": [
                 "dropdown"
               ],
-              "bottomRow": 17,
+              "bottomRow": 25,
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 12.5625,
@@ -156,7 +156,7 @@
               "labelAlignment": "left",
               "renderMode": "CANVAS",
               "responsiveBehavior": "fill",
-              "originalTopRow": 10,
+              "originalTopRow": 18,
               "maxDynamicHeight": 9000,
               "onOptionChange": "{{Get_Student_College_Preference.run(); Get_Student_Favorited_Colleges.run(); \nGet_Student_High_School_Info.run()\nGet_Student_Info.run()}}",
               "minDynamicHeight": 4
@@ -168,8 +168,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 34,
-              "bottomRow": 48,
+              "topRow": 42,
+              "bottomRow": 57,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -190,7 +190,7 @@
                   "widgetName": "Canvas2Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 140,
+                  "bottomRow": 150,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -210,7 +210,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 4,
+                      "bottomRow": 5,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -264,8 +264,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 5,
-                      "bottomRow": 10,
+                      "topRow": 6,
+                      "bottomRow": 11,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -305,7 +305,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 5,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 10,
@@ -379,7 +379,7 @@
                         "label"
                       ],
                       "topRow": 8,
-                      "bottomRow": 12,
+                      "bottomRow": 13,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -457,10 +457,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 35,
+              "originalTopRow": 42,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 49,
+              "originalBottomRow": 57,
               "minDynamicHeight": 14
             },
             {
@@ -472,8 +472,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 18,
-              "bottomRow": 23,
+              "topRow": 26,
+              "bottomRow": 31,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -482,7 +482,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 17,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -499,10 +499,10 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Welcome Back {{Get_Student_Info.data[0].FirstName}} {{Get_Student_Info.data[0].LastName}}!",
+              "text": "Welcome Back {{Get_Student_Info.data === undefined ? \"\" : Get_Student_Info.data[0].FirstName + \" \" + Get_Student_Info.data[0].LastName}}!",
               "key": "90tm2jptbz",
               "isDeprecated": false,
-              "rightColumn": 46,
+              "rightColumn": 64,
               "textAlign": "CENTER",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "6mabxbnkiu",
@@ -515,10 +515,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 18,
+              "originalTopRow": 26,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 23,
+              "originalBottomRow": 31,
               "fontSize": "1.875rem",
               "minDynamicHeight": 4
             },
@@ -534,8 +534,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 34,
-              "bottomRow": 44,
+              "topRow": 42,
+              "bottomRow": 52,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -680,7 +680,7 @@
                       "originalTopRow": 4,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 8,
+                      "originalBottomRow": 9,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -775,10 +775,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 34,
+              "originalTopRow": 42,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 44,
+              "originalBottomRow": 52,
               "minDynamicHeight": 10
             },
             {
@@ -793,8 +793,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 68,
-              "bottomRow": 85,
+              "topRow": 77,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -880,7 +880,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
+                      "originalBottomRow": 6,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -936,10 +936,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 6,
+                      "originalTopRow": 7,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
+                      "originalBottomRow": 11,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -995,10 +995,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 11,
+                      "originalTopRow": 12,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
+                      "originalBottomRow": 16,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
@@ -1034,10 +1034,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 68,
+              "originalTopRow": 77,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 85,
+              "originalBottomRow": 94,
               "minDynamicHeight": 10
             },
             {
@@ -1049,8 +1049,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 29,
-              "bottomRow": 33,
+              "topRow": 37,
+              "bottomRow": 41,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1089,10 +1089,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 29,
+              "originalTopRow": 37,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 33,
+              "originalBottomRow": 41,
               "fontSize": "1.25rem",
               "minDynamicHeight": 4
             },
@@ -1104,8 +1104,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 51,
-              "bottomRow": 55,
+              "topRow": 60,
+              "bottomRow": 64,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -1130,15 +1130,15 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 51,
-              "originalBottomRow": 55
+              "originalTopRow": 60,
+              "originalBottomRow": 64
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 68,
+              "topRow": 77,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1205,7 +1205,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681878399181,
-              "originalBottomRow": 99,
+              "originalBottomRow": 108,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1220,7 +1220,7 @@
               "dynamicPropertyPathList": [],
               "compactMode": "DEFAULT",
               "displayName": "Table",
-              "bottomRow": 99,
+              "bottomRow": 108,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1366,7 +1366,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 68,
+              "originalTopRow": 77,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -1379,8 +1379,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 63,
-              "bottomRow": 67,
+              "topRow": 72,
+              "bottomRow": 76,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1419,10 +1419,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 63,
+              "originalTopRow": 72,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 67,
+              "originalBottomRow": 76,
               "fontSize": "1.25rem",
               "minDynamicHeight": 4
             },
@@ -1438,8 +1438,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 100,
-              "bottomRow": 104,
+              "topRow": 109,
+              "bottomRow": 113,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1467,10 +1467,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
-              "originalTopRow": 100,
+              "originalTopRow": 109,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
-              "originalBottomRow": 104,
+              "originalBottomRow": 113,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -1486,8 +1486,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 86,
-              "bottomRow": 90,
+              "topRow": 95,
+              "bottomRow": 99,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1515,10 +1515,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
-              "originalTopRow": 86,
+              "originalTopRow": 95,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
-              "originalBottomRow": 90,
+              "originalBottomRow": 99,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -1532,8 +1532,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 63,
-              "bottomRow": 67,
+              "topRow": 72,
+              "bottomRow": 76,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1572,10 +1572,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 63,
+              "originalTopRow": 72,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 67,
+              "originalBottomRow": 76,
               "fontSize": "1.25rem",
               "minDynamicHeight": 4
             },
@@ -1588,8 +1588,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 29,
-              "bottomRow": 33,
+              "topRow": 37,
+              "bottomRow": 41,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1628,10 +1628,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 29,
+              "originalTopRow": 37,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 33,
+              "originalBottomRow": 41,
               "fontSize": "1.25rem",
               "minDynamicHeight": 4
             }
@@ -1645,48 +1645,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Student Profile Page_Get_Student_Favorited_Colleges",
-              "name": "Get_Student_Favorited_Colleges",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Student_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Student Profile Page_Get_Student_College_Preference",
-              "name": "Get_Student_College_Preference",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Student_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Student Profile Page_Get_Student_High_School_Info",
-              "name": "Get_Student_High_School_Info",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Student_ID_Login_Bar.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Student Profile Page_Get_Student_Info",
-              "name": "Get_Student_Info",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Student_ID_Login_Bar.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

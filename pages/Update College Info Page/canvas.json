@@ -337,7 +337,7 @@
               "originalTopRow": 28,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 44,
+              "originalBottomRow": 43,
               "minDynamicHeight": 10
             },
             {
@@ -460,7 +460,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "",
+              "onDropdownClose": "{{Get_College_Info.run()}}",
               "key": "7t0xr5swzt",
               "labelTextSize": "1rem",
               "isDeprecated": false,
@@ -473,7 +473,7 @@
               "responsiveBehavior": "fill",
               "originalTopRow": 11,
               "maxDynamicHeight": 9000,
-              "onOptionChange": "{{Get}}",
+              "onOptionChange": "{{Get_College_Info.run()}}",
               "minDynamicHeight": 4
             },
             {
@@ -576,7 +576,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Update_Info_Button",
-                      "onClick": "{{Update_College_Info.run(); Get_College_Info.run()}}",
+                      "onClick": "{{Update_College_Info.run(); Get_College_Info.run(); Get_College_Info.run()}}",
                       "buttonColor": "#18181b",
                       "dynamicPropertyPathList": [
                         {

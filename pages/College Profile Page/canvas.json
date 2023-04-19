@@ -1458,7 +1458,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Update_Metrics_Button",
-              "onClick": "{{navigateTo('Update Admissions Metrics', {}, 'SAME_WINDOW')}}",
+              "onClick": "{{navigateTo('Update College Info Page', {}, 'SAME_WINDOW')}}",
               "buttonColor": "#18181b",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
