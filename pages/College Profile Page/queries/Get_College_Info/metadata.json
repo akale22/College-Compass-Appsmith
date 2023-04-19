@@ -7,6 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
+        "sshProxyEnabled": false,
         "url": "web:4000/colleges/{{College_ID_Login_Bar.selectedOptionValue}}"
       },
       "invalids": [],
